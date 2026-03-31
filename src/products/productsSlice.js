@@ -47,7 +47,7 @@ const initialState = {
 
 const productsSlice = createSlice({
   name: 'products',
-  ṅ,
+  initialState,
   reducers: {
     // Can add more reducers as needed
   }
