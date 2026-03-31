@@ -1,0 +1,135 @@
+.nav-wrapper {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.nav-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-item {
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f9fafb 100%);
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.nav-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+}
+
+.nav-item-name {
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+}
+
+.nav-item-company {
+  color: #764ba2;
+  font-weight: 600;
+  background: rgba(118, 75, 162, 0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-left: 15px;
+  white-space: nowrap;
+}
+
+.nav-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.nav-empty-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  opacity: 0.6;
+}
+
+.nav-empty-text {
+  font-size: 16px;
+  color: #666;
+}
+
+.nav-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 10px;
+  color: #667eea;
+}
+
+.nav-spinner {
+  border: 3px solid #f0f0f0;
+  border-top: 3px solid #667eea;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spinNav 1s linear infinite;
+}
+
+@keyframes spinNav {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-wrapper {
+    padding: 20px;
+  }
+
+  .nav-title {
+    font-size: 20px;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .nav-item-company {
+    margin-left: 0;
+  }
+}
