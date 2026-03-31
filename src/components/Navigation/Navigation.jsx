@@ -17,7 +17,7 @@ const Navigation = ({ onTabChange, user, onLogout }) => {
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-logo">
-          Demo Application
+          React Demo Application
         </div>
         <ul className="nav-menu">
           <li className={`nav-item ${activeTab === 'home' ? 'active' : ''}`}>
